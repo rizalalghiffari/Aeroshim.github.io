@@ -23,8 +23,8 @@ def index():
             u = mm_to_inches(u)
 
         p = calculate_clearance(x, t, u)
-        return render_template('calculator.html', result=p)
-    return render_template('calculator.html', result=None)
+        return render_template('index.html', result=p)
+    return render_template('index.html', result=None)
 
 if __name__ == '__main__':
     app.run(debug=True)

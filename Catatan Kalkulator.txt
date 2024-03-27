@@ -1,5 +1,0 @@
-1. Fitur nyari P 
-2. S adalah catatan kaki.
-3. Rumus ada dibawah
-4. Default itu Inchi, jika masukkanya mili. Tambahkan klausa if else ke button submit.
-5. Menghasilkan Hiutngan P dalam Inchi. apapun inputnya. Jika Inchi langsung di proses, jika mili diconvert ke inchi lalu diproses dengan rumus.

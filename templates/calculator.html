@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Skema Clearance</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Kalkulator Skema Clearance</h5>
+            </div>
+            <div class="card-body">
+                <form method="POST">
+                    <div class="form-group">
+                        <label for="x">X:</label>
+                        <input type="number" step="any" class="form-control" id="x" name="x" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="t">T:</label>
+                        <input type="number" step="any" class="form-control" id="t" name="t" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="u">U:</label>
+                        <input type="number" step="any" class="form-control" id="u" name="u" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="unit">Unit:</label>
+                        <select class="form-control" id="unit" name="unit">
+                            <option value="in">Inch</option>
+                            <option value="mm">Milimeter</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Hitung</button>
+                </form>
+            </div>
+            <div class="card-footer">
+                {% if result %}
+                <p>Hasil: <br>
+                    P = {{ result }}</p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="card mt-5 center-card">
+            <div class="card-body">
+                <h5 class="card-title">Keterangan Rumus</h5>
+                <p class="card-text">P = 2,277 - (X - T + U)
+                </p>
+            </div>
+        </div>
+        <div class="card mt-5 center-card">
+            <div class="card-body">
+                <h5 class="card-title">Catatan</h5>
+                <p class="card-text">S = 5,13 sampai dengan 5,15
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
